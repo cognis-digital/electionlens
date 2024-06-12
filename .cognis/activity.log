@@ -36,3 +36,4 @@
 2025-09-21T19:21:51  chore: feed the FOUNDRY
 2026-01-24T14:38:58  chore: IRONCLAD hardening pass
 2026-05-12T09:55:05  chore: ATHENA-PRIME calibration
+2024-06-12T17:01:11  fix(core): dedupe overlapping findings
