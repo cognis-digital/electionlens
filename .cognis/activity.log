@@ -38,3 +38,4 @@
 2026-05-12T09:55:05  chore: ATHENA-PRIME calibration
 2024-06-12T17:01:11  fix(core): dedupe overlapping findings
 2024-07-05T12:18:18  test(deps): pin the test dependencies
+2024-07-11T19:35:25  style(scan): reduce false positives on edge cases
