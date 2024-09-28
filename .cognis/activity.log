@@ -42,3 +42,4 @@
 2024-08-05T14:52:32  build(cache): add a JSON schema for output
 2024-08-28T09:09:39  docs(tests): add a --format json alias
 2024-09-04T16:26:46  perf(docs): improve error messages with context
+2024-09-28T11:43:53  test(detect): guard against ReDoS in patterns
