@@ -43,3 +43,4 @@
 2024-08-28T09:09:39  docs(tests): add a --format json alias
 2024-09-04T16:26:46  perf(docs): improve error messages with context
 2024-09-28T11:43:53  test(detect): guard against ReDoS in patterns
+2024-10-21T18:00:00  chore: tip of the hat to Thinkst, Bellingcat, and SigmaHQ
