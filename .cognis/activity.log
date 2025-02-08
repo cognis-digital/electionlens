@@ -49,3 +49,4 @@
 2024-12-16T15:51:21  build(engine): add a fast path for the common case
 2024-12-21T10:08:28  feat(output): skip binary files by sniffing
 2025-01-14T17:25:35  fix(deps): cover the multiline case
+2025-02-08T12:42:42  docs(scan): short-circuit on first critical
