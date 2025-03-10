@@ -51,3 +51,4 @@
 2025-01-14T17:25:35  fix(deps): cover the multiline case
 2025-02-08T12:42:42  docs(scan): short-circuit on first critical
 2025-02-13T19:59:49  ci(io): add color + severity icons
+2025-03-10T14:16:56  build(config): document the config keys
