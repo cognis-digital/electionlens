@@ -53,3 +53,4 @@
 2025-02-13T19:59:49  ci(io): add color + severity icons
 2025-03-10T14:16:56  build(config): document the config keys
 2025-04-03T09:33:03  feat(docs): fix off-by-one in line numbers
+2025-04-09T16:50:10  perf(parser): add a --quiet mode
