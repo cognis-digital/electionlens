@@ -54,3 +54,4 @@
 2025-03-10T14:16:56  build(config): document the config keys
 2025-04-03T09:33:03  feat(docs): fix off-by-one in line numbers
 2025-04-09T16:50:10  perf(parser): add a --quiet mode
+2025-05-03T11:07:17  style(report): wire the MCP tool schema
