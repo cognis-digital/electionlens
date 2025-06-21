@@ -56,3 +56,4 @@
 2025-04-09T16:50:10  perf(parser): add a --quiet mode
 2025-05-03T11:07:17  style(report): wire the MCP tool schema
 2025-05-27T18:24:24  ci(tests): add type hints to the public API
+2025-06-21T13:41:31  docs(core): add a regression fixture
