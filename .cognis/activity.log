@@ -62,3 +62,4 @@
 2025-08-14T10:32:52  style(ci): stream large files without buffering
 2025-08-19T17:49:59  chore: bump dev tooling
 2025-09-13T12:06:06  chore: BLACKBOOK redaction pass
+2025-10-07T19:23:13  docs: standing on the shoulders of giants (garak, sigma, trufflehog)
