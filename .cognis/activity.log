@@ -65,3 +65,4 @@
 2025-10-07T19:23:13  docs: standing on the shoulders of giants (garak, sigma, trufflehog)
 2025-10-13T14:40:20  build(fixtures): trim whitespace in parsed fields
 2025-11-06T09:57:27  fix(rules): make timestamps timezone-aware
+2025-11-30T16:14:34  chore(report): support stdin as a source
