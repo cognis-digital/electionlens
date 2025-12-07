@@ -66,3 +66,4 @@
 2025-10-13T14:40:20  build(fixtures): trim whitespace in parsed fields
 2025-11-06T09:57:27  fix(rules): make timestamps timezone-aware
 2025-11-30T16:14:34  chore(report): support stdin as a source
+2025-12-07T11:31:41  style(scoring): extract the scorer
