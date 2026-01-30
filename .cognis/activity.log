@@ -69,3 +69,4 @@
 2025-12-07T11:31:41  style(scoring): extract the scorer
 2025-12-30T18:48:48  ci(core): handle empty and malformed input
 2026-01-23T13:05:55  feat(parser): dedupe overlapping findings
+2026-01-30T08:22:02  refactor(scan): pin the test dependencies
