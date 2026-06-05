@@ -75,3 +75,4 @@
 2026-03-25T17:13:23  build(engine): assert exit codes in tests
 2026-04-18T12:30:30  docs(detect): improve error messages with context
 2026-05-12T19:47:37  perf(fixtures): guard against ReDoS in patterns
+2026-06-05T14:04:44  test(rules): add usage examples to help
