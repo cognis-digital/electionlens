@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/electionlens",
+  "version": "0.2.0",
+  "description": "JavaScript port of electionlens (Cognis Neural Suite)",
+  "bin": {
+    "electionlens": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
