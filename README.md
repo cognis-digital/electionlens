@@ -36,7 +36,8 @@ Influence-operations pattern monitor for election periods — without standing u
 <a name="features"></a>
 ## Features
 
-- ✅ Scan
+- ✅ Load Posts
+- ✅ Analyze
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
