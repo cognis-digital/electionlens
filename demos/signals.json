@@ -1,0 +1,14 @@
+[
+  {
+    "cluster_id": "c1",
+    "cluster_size": "8",
+    "sync_post_pct": "92",
+    "narrative_injection": true
+  },
+  {
+    "cluster_id": "c2",
+    "cluster_size": "3",
+    "sync_post_pct": "40",
+    "narrative_injection": false
+  }
+]

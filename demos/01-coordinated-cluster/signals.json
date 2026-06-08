@@ -1,0 +1,22 @@
+[
+  {
+    "cluster_id": "c-april-001",
+    "cluster_size": "42",
+    "sync_post_pct": "94",
+    "narrative_injection": true,
+    "topic": "voter-fraud-narrative"
+  },
+  {
+    "cluster_id": "c-april-002",
+    "cluster_size": "18",
+    "sync_post_pct": "81",
+    "narrative_injection": true,
+    "topic": "candidate-X-smear"
+  },
+  {
+    "cluster_id": "c-april-003",
+    "cluster_size": "4",
+    "sync_post_pct": "50",
+    "narrative_injection": false
+  }
+]

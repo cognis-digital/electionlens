@@ -1,0 +1,8 @@
+[
+  {
+    "cluster_id": "organic-001",
+    "cluster_size": "3",
+    "sync_post_pct": "22",
+    "narrative_injection": false
+  }
+]

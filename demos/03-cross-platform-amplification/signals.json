@@ -1,0 +1,13 @@
+[
+  {
+    "cluster_id": "cross-001",
+    "cluster_size": "30",
+    "sync_post_pct": "88",
+    "narrative_injection": true,
+    "platforms": [
+      "x",
+      "tiktok",
+      "facebook"
+    ]
+  }
+]
