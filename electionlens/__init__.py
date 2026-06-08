@@ -1,11 +1,31 @@
-"""
-ELECTIONLENS — Influence-operations pattern monitor for election periods
-Part of the Cognis Neural Suite by Cognis Digital.
-https://cognis.digital · MIT License
-"""
-from electionlens.core import scan, TOOL_NAME, TOOL_VERSION
+"""ELECTIONLENS - Influence-operations pattern monitor for election periods.
 
-__version__ = TOOL_VERSION
-__author__ = "Cognis Digital"
-__license__ = "MIT"
-__all__ = ["scan", "TOOL_NAME", "TOOL_VERSION", "__version__"]
+A standard-library-only engine that scans short-form posts/messages collected
+during an election window and surfaces coordinated inauthentic behavior (CIB)
+signals: copypasta amplification, burst timing, account clustering, and
+narrative spikes. It does NOT judge truth/falsity of content -- it measures
+*coordination and amplification patterns*, which are the observable footprint
+of influence operations.
+"""
+from .core import (
+    Post,
+    AccountStats,
+    NarrativeCluster,
+    Findings,
+    analyze,
+    load_posts,
+)
+
+TOOL_NAME = "electionlens"
+TOOL_VERSION = "1.0.0"
+
+__all__ = [
+    "Post",
+    "AccountStats",
+    "NarrativeCluster",
+    "Findings",
+    "analyze",
+    "load_posts",
+    "TOOL_NAME",
+    "TOOL_VERSION",
+]

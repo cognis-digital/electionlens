@@ -1,0 +1,20 @@
+[
+  {"id": "o1", "account": "voter_jane", "timestamp": "2026-11-02T14:00:05Z", "text": "Just got back from early voting, lines were short. #vote2026"},
+  {"id": "o2", "account": "local_news", "timestamp": "2026-11-02T14:00:40Z", "text": "Polls open until 8pm tonight across the county. Find your location at the link."},
+  {"id": "o3", "account": "civic_mike", "timestamp": "2026-11-02T14:01:10Z", "text": "Reminder to check your registration status before heading out. #vote2026"},
+  {"id": "o4", "account": "student_amy", "timestamp": "2026-11-02T14:01:55Z", "text": "First time voting and it felt great honestly"},
+  {"id": "c1", "account": "patriot_7781", "timestamp": "2026-11-02T14:02:01Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c2", "account": "patriot_3344", "timestamp": "2026-11-02T14:02:04Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c3", "account": "freedom_eagle22", "timestamp": "2026-11-02T14:02:07Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c4", "account": "wakeup_now", "timestamp": "2026-11-02T14:02:11Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c5", "account": "truthbot_x", "timestamp": "2026-11-02T14:02:20Z", "text": "WAKE UP! #StopTheCount the fraud is everywhere, do not trust the results!"},
+  {"id": "c6", "account": "patriot_7781", "timestamp": "2026-11-02T14:02:33Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c7", "account": "patriot_3344", "timestamp": "2026-11-02T14:02:41Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c8", "account": "truthbot_x", "timestamp": "2026-11-02T14:02:50Z", "text": "#StopTheCount #StopTheCount they are counting fake ballots RIGHT NOW"},
+  {"id": "o5", "account": "voter_jane", "timestamp": "2026-11-02T14:03:30Z", "text": "Anyone know if the downtown precinct moved? Asking for my neighbor."},
+  {"id": "o6", "account": "local_news", "timestamp": "2026-11-02T14:04:10Z", "text": "Turnout reported strong in suburban districts this afternoon."},
+  {"id": "c9", "account": "freedom_eagle22", "timestamp": "2026-11-02T14:04:15Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "c10", "account": "wakeup_now", "timestamp": "2026-11-02T14:04:22Z", "text": "The election is RIGGED!! They are stealing it right now. Share before they delete this!! #StopTheCount"},
+  {"id": "o7", "account": "civic_mike", "timestamp": "2026-11-02T14:05:00Z", "text": "Great to see so many young voters out today. #vote2026"},
+  {"id": "o8", "account": "student_amy", "timestamp": "2026-11-02T14:05:45Z", "text": "Grabbing coffee after voting, productive morning"}
+]
