@@ -1,31 +1,11 @@
-"""ELECTIONLENS - Influence-operations pattern monitor for election periods.
-
-A standard-library-only engine that scans short-form posts/messages collected
-during an election window and surfaces coordinated inauthentic behavior (CIB)
-signals: copypasta amplification, burst timing, account clustering, and
-narrative spikes. It does NOT judge truth/falsity of content -- it measures
-*coordination and amplification patterns*, which are the observable footprint
-of influence operations.
-"""
-from .core import (
-    Post,
-    AccountStats,
-    NarrativeCluster,
-    Findings,
-    analyze,
-    load_posts,
-)
-
-TOOL_NAME = "electionlens"
-TOOL_VERSION = "1.0.0"
-
-__all__ = [
-    "Post",
-    "AccountStats",
-    "NarrativeCluster",
-    "Findings",
-    "analyze",
-    "load_posts",
-    "TOOL_NAME",
-    "TOOL_VERSION",
-]
+"""electionlens — part of the Cognis Neural Suite."""
+try:  # re-export the tool's public API + identity from core
+    from electionlens.core import *  # noqa: F401,F403
+except Exception:  # pragma: no cover
+    pass
+try:
+    from electionlens.core import TOOL_NAME, TOOL_VERSION
+except Exception:  # pragma: no cover
+    TOOL_NAME = "electionlens"
+    TOOL_VERSION = "0.1.0"
+__version__ = TOOL_VERSION
