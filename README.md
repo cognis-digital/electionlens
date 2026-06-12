@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-electionlens
+pip install "git+https://github.com/cognis-digital/electionlens.git"
 electionlens scan .            # → prioritized findings in seconds
 ```
 
@@ -47,7 +47,7 @@ Influence-operations pattern monitor for election periods — without standing u
 ## Quick start
 
 ```bash
-pip install cognis-electionlens
+pip install "git+https://github.com/cognis-digital/electionlens.git"
 electionlens --version
 electionlens scan .                       # scan current project
 electionlens scan . --format json         # machine-readable
