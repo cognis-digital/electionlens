@@ -20,6 +20,41 @@ pip install cognis-electionlens
 electionlens scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. **Install** the CLI:
+
+   ```bash
+   pipx install "git+https://github.com/cognis-digital/electionlens.git"
+   ```
+
+2. **Scan** a corpus of posts for coordinated inauthentic behavior — the primary command. Accepts a JSON array, JSONL, or `-` for stdin:
+
+   ```bash
+   electionlens scan posts.jsonl
+   cat posts.json | electionlens scan -
+   ```
+
+3. **Tune the clustering** — burst bucket size and the account counts that flag copypasta clusters and bursts:
+
+   ```bash
+   electionlens scan posts.jsonl \
+     --window 120 --min-cluster-accounts 3 --min-burst-accounts 4
+   ```
+
+4. **Read the output** — table by default, or JSON for downstream analysis:
+
+   ```bash
+   electionlens --format json scan posts.jsonl > cib-report.json
+   ```
+
+5. **Automate in CI / monitoring** — exit non-zero (`3`) when the risk level is CRITICAL:
+
+   ```bash
+   electionlens scan posts.jsonl --fail-on-critical
+   # exit 3 => CRITICAL coordinated behavior detected
+   ```
+
 ## Contents
 
 - [Why electionlens?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
