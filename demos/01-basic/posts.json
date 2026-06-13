@@ -1,4 +1,7 @@
 [
+  {"id": "b1", "account": "skeptical_voter", "timestamp": "2026-11-02T13:00:10Z", "text": "Hearing some claims about #StopTheCount. Waiting to see actual evidence before forming an opinion."},
+  {"id": "b2", "account": "news_watcher", "timestamp": "2026-11-02T13:10:05Z", "text": "Some accounts already using #StopTheCount even before results. Seems early to be worried."},
+  {"id": "b3", "account": "fact_check_fan", "timestamp": "2026-11-02T13:20:22Z", "text": "Checking the #StopTheCount claims. So far nothing credible. Voting is still ongoing."},
   {"id": "o1", "account": "voter_jane", "timestamp": "2026-11-02T14:00:05Z", "text": "Just got back from early voting, lines were short. #vote2026"},
   {"id": "o2", "account": "local_news", "timestamp": "2026-11-02T14:00:40Z", "text": "Polls open until 8pm tonight across the county. Find your location at the link."},
   {"id": "o3", "account": "civic_mike", "timestamp": "2026-11-02T14:01:10Z", "text": "Reminder to check your registration status before heading out. #vote2026"},

@@ -4,7 +4,6 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from dataclasses import asdict
 
 from . import TOOL_NAME, TOOL_VERSION
 from .core import analyze, load_posts, AnalysisError, Findings

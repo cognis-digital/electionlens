@@ -16,9 +16,15 @@
 </div>
 
 ```bash
-pip install cognis-electionlens
+pip install "git+https://github.com/cognis-digital/electionlens.git"
 electionlens scan .            # → prioritized findings in seconds
 ```
+
+<!-- cognis:layman:start -->
+## What is this?
+
+ElectionLens is a command-line tool that scans social media post data to detect coordinated influence operations — things like bot networks copying and sharing the same messages, accounts acting in synchronized bursts, or hashtags being artificially amplified during election periods. You give it a file of posts, and it tells you which accounts look suspicious, what messages are being copy-pasted across many accounts, and where unusual activity spikes occurred. It is designed for journalists, researchers, and civic organizations who want to monitor for coordinated manipulation campaigns without needing access to expensive enterprise platforms.
+<!-- cognis:layman:end -->
 
 ## Contents
 
@@ -44,10 +50,56 @@ Influence-operations pattern monitor for election periods — without standing u
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:domains:start -->
+## Domains
+
+**Primary domain:** Intelligence & OSINT  ·  **JTF MERIDIAN division:** NULLBYTE · BLACK CELL
+
+**Topics:** `cognis` `osint` `intelligence` `recon`
+
+Part of the **Cognis Neural Suite** — 300+ source-available tools organized across 12 domains under the JTF MERIDIAN command structure. See the [suite on GitHub](https://github.com/cognis-digital) and [jtf-meridian](https://github.com/cognis-digital/jtf-meridian) for how the pieces fit together.
+<!-- cognis:domains:end -->
+
+<!-- cognis:install:start -->
+## Install
+
+`electionlens` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/electionlens/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/electionlens/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/electionlens.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/electionlens.git"  # uv
+pip install "git+https://github.com/cognis-digital/electionlens.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/electionlens.git
+cd electionlens && pip install .
+```
+
+Then run:
+```sh
+electionlens --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
-pip install cognis-electionlens
+pip install "git+https://github.com/cognis-digital/electionlens.git"
 electionlens --version
 electionlens scan .                       # scan current project
 electionlens scan . --format json         # machine-readable
