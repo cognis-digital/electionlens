@@ -116,6 +116,8 @@ def load_posts(raw: str) -> list[Post]:
             records = json.loads(raw)
         except json.JSONDecodeError as e:
             raise AnalysisError(f"invalid JSON: {e}") from e
+        if not isinstance(records, list):
+            raise AnalysisError("JSON input must be an array, not an object")
     else:
         records = []
         for line in raw.splitlines():
@@ -291,6 +293,20 @@ def analyze(posts: list[Post], *, window_sec: int = 120,
     """Run the full coordination analysis over a corpus of posts."""
     if not posts:
         raise AnalysisError("no posts to analyze")
+    if not isinstance(window_sec, int) or window_sec < 1:
+        raise AnalysisError(
+            f"window_sec must be a positive integer, got {window_sec!r}"
+        )
+    if not isinstance(min_cluster_accounts, int) or min_cluster_accounts < 1:
+        raise AnalysisError(
+            "min_cluster_accounts must be a positive integer, "
+            f"got {min_cluster_accounts!r}"
+        )
+    if not isinstance(min_burst_accounts, int) or min_burst_accounts < 1:
+        raise AnalysisError(
+            "min_burst_accounts must be a positive integer, "
+            f"got {min_burst_accounts!r}"
+        )
     times = sorted(p.timestamp for p in posts)
     accounts = {p.account for p in posts}
 

@@ -57,6 +57,25 @@ def _findings_json(f: Findings) -> str:
 
 
 def _cmd_scan(args: argparse.Namespace) -> int:
+    if args.window < 1:
+        print(
+            f"error: --window must be a positive integer, got {args.window}",
+            file=sys.stderr,
+        )
+        return 2
+    if args.min_cluster_accounts < 1:
+        print(
+            "error: --min-cluster-accounts must be >= 1, "
+            f"got {args.min_cluster_accounts}",
+            file=sys.stderr,
+        )
+        return 2
+    if args.min_burst_accounts < 1:
+        print(
+            f"error: --min-burst-accounts must be >= 1, got {args.min_burst_accounts}",
+            file=sys.stderr,
+        )
+        return 2
     try:
         if args.input == "-":
             raw = sys.stdin.read()
@@ -120,7 +139,14 @@ def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     # allow --format to appear after subcommand too; argparse handles top-level
     args = parser.parse_args(argv)
-    return args.func(args)
+    try:
+        return args.func(args)
+    except KeyboardInterrupt:
+        print("\nerror: interrupted", file=sys.stderr)
+        return 130
+    except Exception as e:  # pragma: no cover
+        print(f"error: unexpected failure: {e}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
