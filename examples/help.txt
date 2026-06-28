@@ -1,0 +1,16 @@
+$ electionlens-emit --help
+
+usage: electionlens [-h] [--version] [--format {table,json}] {scan} ...
+
+Influence-operations pattern monitor for election periods.
+
+positional arguments:
+  {scan}
+    scan                scan a corpus of posts for coordinated inauthentic
+                        behavior
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --format {table,json}
+                        output format (default: table)

@@ -20,6 +20,70 @@ pip install cognis-electionlens
 electionlens scan .            # → prioritized findings in seconds
 ```
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+Real, reproducible output from the tool — runs offline:
+
+```console
+$ electionlens-emit --version
+electionlens 0.1.0
+```
+
+```console
+$ electionlens-emit --help
+usage: electionlens [-h] [--version] [--format {table,json}] {scan} ...
+
+Influence-operations pattern monitor for election periods.
+
+positional arguments:
+  {scan}
+    scan                scan a corpus of posts for coordinated inauthentic
+                        behavior
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --format {table,json}
+                        output format (default: table)
+```
+
+> Blocks above are real `electionlens` output — reproduce them from a clone.
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+    "results": [
+        {
+            "id": "123456",
+            "title": "Voter Registration Scam",
+            "description": "Suspicious voter registration activity detected.",
+            "confidence": 0.8,
+            "tags": ["phishing", "voting"],
+            "indicators": [
+                {"type": "IP", "value": "192.0.2.1"},
+                {"type": "URL", "value": "https://example.com"}
+            ]
+        },
+        {
+            "id": "789012",
+            "title": "Social Media Disinformation Campaign",
+            "description": "Malicious social media posts detected.",
+            "confidence": 0.9,
+            "tags": ["disinfo", "socialmedia"],
+            "indicators": [
+                {"type": "Twitter Handle", "value": "@FakeNews"},
+                {"type": "Facebook Page", "value": "https://example.com/page"}
+            ]
+        }
+    ]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 1. **Install** the CLI:

@@ -1,0 +1,3 @@
+$ electionlens-emit --version
+
+electionlens 0.1.0
